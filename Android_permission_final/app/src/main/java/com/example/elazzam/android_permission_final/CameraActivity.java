@@ -62,8 +62,8 @@ public class CameraActivity extends AppCompatActivity {
     public void AlertCamera() {
         AlertDialog alertdialog = new AlertDialog.Builder(this).create();
         alertdialog.setTitle("Permission audio");
-        alertdialog.setMessage("Cette permission est nécessaire pour enregistrer l'audio ");
-        alertdialog.setButton(AlertDialog.BUTTON_NEGATIVE, "Je veux pas !!!", new DialogInterface.OnClickListener() {
+        alertdialog.setMessage("Cette permission est nécessaire pour prendre des photos ");
+        alertdialog.setButton(AlertDialog.BUTTON_NEGATIVE, "plus tard", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
                 Toast.makeText(getApplicationContext(), "permission refuser", Toast.LENGTH_SHORT).show();
@@ -91,7 +91,7 @@ public class CameraActivity extends AppCompatActivity {
                     if (showRationale) {
                         AlertCamera();
                     } else if (!showRationale) {
-                        Toast.makeText(getApplicationContext(), "pour donner la permission allez sur reglage -> application -> android_permission_record_final -> autorisations -> autoriser du microphone", Toast.LENGTH_LONG).show();
+                        Toast.makeText(getApplicationContext(), "pour donner la permission allez sur reglage -> application -> android_permission_record_final -> autorisations -> autoriser camera", Toast.LENGTH_LONG).show();
                         finish();
                         // l'utilisateur a refusé la permission
                         //vous pouvez soit activer un peu de recul,

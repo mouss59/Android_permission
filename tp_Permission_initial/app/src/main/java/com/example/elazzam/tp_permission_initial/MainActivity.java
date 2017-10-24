@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     if (showRationale) {
                         AlertAudio();
                     } else if (!showRationale) {
-                        Toast.makeText(getApplicationContext(), "pour donner la permission allez sur reglage -> application -> android_permission_initial -> autorisations -> autoriser du microphone",
+                        Toast.makeText(getApplicationContext(), "pour donner la permission allez sur reglage -> application -> android_permission_initial -> autorisations -> autoriser microphone",
                                 Toast.LENGTH_LONG).show();
 
                         //l'utilisateur a choisi ne plus jamais redemander
