@@ -148,7 +148,7 @@ public class RecordActivity extends AppCompatActivity {
         alertdialog.setButton(AlertDialog.BUTTON_NEGATIVE, "plus tard", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
-                Toast.makeText(getApplicationContext(), "permission refuser", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "permission refusée", Toast.LENGTH_SHORT).show();
                 //finish();
             }
         });
